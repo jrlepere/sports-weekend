@@ -1,0 +1,11 @@
+<p>
+    <mat-form-field>
+        <mat-label>Select NFL week #</mat-label>
+        <mat-select [(value)]="week" (selectionChange)="loadGames()">
+            <mat-option *ngFor="let weekNum of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]"
+            value="{{weekNum}}">Week {{weekNum}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</p>
+<app-map [games]="games"></app-map>

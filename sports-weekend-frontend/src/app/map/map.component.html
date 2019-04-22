@@ -1,0 +1,9 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+    <agm-marker *ngFor="let game of games" [latitude]="game.latitude" [longitude]="game.longitude" [iconUrl]="getIconUrl(game)">
+        <agm-info-window [disableAutoPan]="true">
+            <img src="{{game.team1LogoUrl}}"> {{game.team1}} vs {{game.team2}} <img src="{{game.team2LogoUrl}}">
+            <br>{{game.date}}
+            <br>{{game.time}}
+        </agm-info-window>
+    </agm-marker>
+</agm-map>
