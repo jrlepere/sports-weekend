@@ -1,3 +1,4 @@
 .DS_Store
 .metadata/
 sports-weekend.pem
+sports-weekend-frontend/src/app/googlemaps-apikey.ts
